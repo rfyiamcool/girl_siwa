@@ -69,7 +69,7 @@ def main():
         rsp = ai_obj.face_detectface(image_data, 0)
 
         if rsp['ret'] == 0:
-            print("> ", rsp['data']['text'])
+            print(">  ", rsp['data']['text'])
             ok, mark = is_siwa(rsp['data']['text'])
             if ok:
                 print("> contains: ", mark)
